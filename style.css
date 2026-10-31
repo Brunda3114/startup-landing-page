@@ -1,0 +1,346 @@
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1c1c1c;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 530px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 22px 14px 34px;
+    background-color: black;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 25px;
+    padding: 0 16px;
+
+    background-color: #ffb900;
+}
+
+.logo {
+    color: black;
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 8px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* INTRO SECTION */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+
+    padding: 23px 16px 0;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 19px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    color: #d0d0d0;
+    font-size: 8px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+.login-btn {
+    background-color: #ffb900;
+    color: black;
+
+    border: none;
+    border-radius: 25px;
+
+    min-width: 95px;
+    padding: 5px 18px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #e6a700;
+}
+
+
+/* JEFF BEZOS IMAGE */
+
+.hero-image {
+    flex: 0 0 44%;
+    height: 144px;
+
+    border: 3px solid #ffcf00;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* CONTACT US SECTION */
+
+.contact-section {
+    padding: 33px 18px 0;
+}
+
+.contact-section h2 {
+    color: #ffb900;
+    font-size: 19px;
+    font-weight: 700;
+
+    margin-bottom: 17px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+/* INPUT FIELDS */
+
+.contact-section input {
+    width: 100%;
+    height: 25px;
+
+    padding: 0 16px;
+
+    border: 1px solid #ffb900;
+    border-radius: 25px;
+
+    background-color: black;
+    color: white;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
+
+    outline: none;
+}
+
+.contact-section input::placeholder {
+    color: #ffb900;
+    opacity: 1;
+}
+
+
+/* REMOVE BLUE OUTLINE ON FOCUS */
+
+.contact-section input:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #ffcf00;
+}
+
+
+/* MOBILE NUMBER AND CITY */
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row input {
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* SUBMIT BUTTON */
+
+.submit-btn {
+    align-self: center;
+
+    min-width: 95px;
+    height: 25px;
+
+    padding: 0 16px;
+
+    background-color: #ffb900;
+    color: black;
+
+    border: none;
+    border-radius: 25px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #e6a700;
+}
+
+
+/* TABLE SECTION */
+
+.table-section {
+    margin: 34px 22px 0;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    color: #ffb900;
+    font-size: 8px;
+    text-align: left;
+}
+
+
+/* TABLE HEADINGS AND DATA */
+
+th,
+td {
+    padding: 8px 10px;
+    border: 1px solid #b88b00;
+    font-weight: 400;
+}
+
+th {
+    height: 29px;
+}
+
+
+/* COLUMN WIDTHS */
+
+th:first-child,
+td:first-child {
+    width: 9%;
+    text-align: center;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 31%;
+}
+
+
+/* TABLE BODY */
+
+tbody tr {
+    height: 30px;
+}
+
+
+/* TABLE FOOTER */
+
+tfoot {
+    background-color: #ffb900;
+    color: black;
+}
+
+tfoot td {
+    height: 28px;
+    border-color: #9b7600;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 420px) {
+
+    .container {
+        padding: 14px 10px 25px;
+    }
+
+    .navbar {
+        padding: 8px 10px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 22px 10px 0;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 190px;
+        flex-basis: auto;
+    }
+
+    .contact-section {
+        padding: 28px 10px 0;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .table-section {
+        margin: 30px 5px 0;
+    }
+
+    th,
+    td {
+        padding: 8px 6px;
+    }
+
+}
